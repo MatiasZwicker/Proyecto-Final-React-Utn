@@ -1,0 +1,16 @@
+.img-carro{
+    max-width: 22rem;
+    margin: 0 auto;
+    
+}
+#carouselExampleCaptions{
+    background-color: white;
+}
+#content{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); 
+}

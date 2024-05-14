@@ -1,0 +1,49 @@
+.footer {
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(8, 8, 70);
+}
+
+.redes-contenedor {
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-footer {
+    margin-top: 0.8rem;
+}
+
+.center-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+
+    width: 3rem;
+    padding: 0.8rem;
+    transition: 0.8s;
+    margin: 0 auto;
+
+
+}
+
+.foto:hover {
+
+    background-color: rgb(112, 205, 221);
+    border-radius: 30%;
+}
+
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}

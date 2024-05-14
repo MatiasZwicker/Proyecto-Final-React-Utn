@@ -1,0 +1,399 @@
+.contenedor-prods {
+    position: relative;
+    min-height: 100vh;
+}
+
+.Carro {
+    border: none;
+    position: fixed;
+    top: 1;
+    right: 0;
+    margin-right: 8rem;
+    background-color: white;
+    transition: 0.5s;
+
+}
+
+.carro {
+    border: none;
+    background-color: white;
+    transition: 1s;
+}
+
+.carro:hover {
+    background-color: rgba(141, 141, 74, 0.459);
+    box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+    border-radius: 45%;
+    padding: 0.5rem;
+}
+
+
+.tit-cat {
+    margin-top: 13rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: rgb(136, 136, 80);
+    text-align: center;
+   
+}
+
+/* ------------- BOTONES FILTROS ---------------------*/
+.btn-filtross {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.btn-filtro {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 0;
+    padding: 1.3rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgba(136, 136, 80, 0.555);
+    background-color: white;
+    border: none;
+    transition: 0.2s;
+}
+
+.btn-filtro:hover {
+    color: rgb(136, 136, 80);
+    border-bottom: 3px solid rgb(136, 136, 80);
+}
+
+/* ------------- BOTONES FILTROS FIN ---------------------*/
+/*-------------- PRODUCTOS ----------------------------*/
+
+.contenedor-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding-bottom: 20rem;
+    margin-bottom: 0rem;
+    margin-top: 4rem;
+}
+
+.productos-btn {
+    background-color: white;
+    border: none;
+    width: 20rem;
+    transition: 0.8s;
+}
+
+.img {
+    max-width: 20rem;
+    max-height: 15em;
+    margin-top: 1.5rem;
+
+}
+
+.precio {
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    font-family: "Amethysta", serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 1rem;
+}
+
+.titulo-producto {
+    color: black;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: "Amethysta", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*-------------- PRODUCTOS FIN----------------------------*/
+
+/*-------------------- Producto seleccionado --------------*/
+.modal-producto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-content {
+    width: 70%;
+    height: 65%;
+    margin-top: 9rem;
+    padding: 2rem;
+    background-color: white;
+    color: rgb(97, 97, 29);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+        'titulo titulo'
+        'img txt';
+
+}
+
+
+.cerrar-modal-prod {
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.titulo-prod {
+    grid-area: titulo;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.txt {
+    grid-area: txt;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+}
+
+.img-prod {
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.txt-descr {
+    color: rgb(19, 19, 19);
+    font-size: 1.3rem;
+
+}
+
+.precio-prod {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    font-family: "Amethysta", serif;
+    margin-top: 1rem;
+}
+
+.agregar {
+    background-color: rgba(97, 97, 29, 0.397);
+    padding: 0.3rem;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.agregar:hover {
+    background-color: rgba(97, 97, 29, 0.822);
+}
+
+/*-------------------- Producto seleccionado fin  --------------*/
+
+/*--------------------- CARRITO -------------------------*/
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.329);
+    display: flex;
+    transition: 1s;
+
+}
+
+.modal-contenido {
+    color: rgb(97, 97, 29);
+    transition: 1s;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100vh;
+    background-color: white;
+    transition: 1s;
+    overflow-y: auto;
+}
+
+.cerrar-modal {
+    float: right;
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    border: none;
+    margin: 5px;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.cerrar-modal:hover {
+    background-color: rgb(65, 180, 225);
+    color: white;
+}
+
+.tit-carrito {
+    font-size: 2.3rem;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.prod {
+    padding: 0;
+    margin: 10px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+
+.producto-imagen {
+    width: 5rem;
+    margin-right: 0.5rem;
+}
+
+.lista {
+    border-left: 5px solid rgb(11, 44, 105);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 10px 0;
+    padding: 1px 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lista:hover {
+
+    border-left: 5px solid rgb(65, 180, 225);
+
+}
+
+.eliminar {
+    margin: 1rem;
+    background-color: rgb(6, 6, 58);
+    color: white;
+    border-radius: 5px;
+    transition: 0.7s;
+    box-shadow: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.eliminar:hover {
+    background-color: rgb(65, 180, 225);
+}
+
+.btn-carrito {
+    background-color: rgba(4, 4, 133, 0.932);
+    color: white;
+    border: solid 1px white;
+    padding-bottom: 8px;
+    padding-left: 60px;
+    padding-right: 60px;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.btn-carrito:hover {
+    background-color: rgba(53, 167, 219, 0.986);
+}
+
+.precio-final-txt-sub {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: black;
+
+}
+
+.precio-final-txt {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: black;
+    margin-bottom: 0;
+}
+
+.final {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px -4px 5px rgba(2, 2, 1, 0.5);
+}
+@media (max-width: 430px)
+{
+    .tit-cat{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 900px){
+   .Carro{
+    margin-right: 1rem;
+   }
+}
+@media (max-width: 800px){
+    .btn-filtross{
+        display: flex;
+        flex-direction: column;
+
+    }
+ }
+
+ @media (max-width: 1200px){
+ .titulo-prod{
+    font-size: 3rem;
+ }
+ .img-prod{
+    width: 16rem;
+ }
+ .txt-descr{
+    font-size: 1rem;
+ }
+}
+@media (max-width: 1000px){
+    
+     .txt-descr{
+        display: none;
+     }
+     .modal-content{
+        display: flex;
+     }
+}
+@media (max-width: 900px){
+    .modal-contenido {
+        width: 60%;
+    }
+}

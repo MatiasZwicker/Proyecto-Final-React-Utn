@@ -1,0 +1,90 @@
+.init{
+    margin-top: 13rem;
+}
+.form{
+    margin: 0 auto;
+    margin-top: 13rem;
+    display: flex;
+    border: solid #888850 3px;
+    padding: 1rem;
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  margin-bottom: 10rem;
+}
+.form-int{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+label{
+    padding-top: 1rem;
+}
+button{
+    margin-top: 1rem;
+}
+
+.reg-exi{
+    font-size: 4rem;
+    color: #888850;
+    margin-top: 15rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5rem;
+}
+.img-messi{
+    width: 100%;
+}
+.prodd{
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #888850;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: solid #888850 4px;
+    padding: 0.6rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.prodd:hover{
+    background-color: #464612;
+}
+.btn-cerrar-sesion{
+display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: white solid 1px;
+    background-color: #888850;
+    color: white;
+    transition: 1s;
+    margin-bottom: 3rem;
+    padding: 0.3rem;
+    font-size: 1.3rem;
+}
+.btn-cerrar-sesion:hover{
+    background-color: #464612;
+}
+
+
+.etique{
+
+    padding: 1rem;
+}
+.inp{
+    margin-left: 0.6rem;
+
+}
+.tit-form{
+    color: #888850;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}

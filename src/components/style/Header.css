@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-area:
+        "links logo logos";
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+.links {
+    grid-area: "links";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo {
+    grid-area: "logo";
+    width: 5rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.Carro {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;    
+    border: none;
+    background-color: white;
+    transition: 0.5s;
+    
+    
+}
+.Link {
+    
+    color: #888850;
+    padding: 1.3rem;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600; 
+    transition: 1s;
+}
+
+.Link.active{
+    color: rgba(109, 109, 60, 0.432);
+    border-bottom: 1px solid rgba(104, 104, 57, 0.466);
+
+}
+.sesion-link{
+    grid-area: "logos";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sesion-L{
+    color: #888850;
+    padding: 1.3rem;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600; 
+    transition: 1s;
+}
+.sesion-L:hover{
+    color: rgba(109, 109, 60, 0.432);
+}
+
+@media (max-width:1000px){
+    .links{
+       flex-direction: column;
+       
+    }
+    .Link{
+       text-align: left;
+        padding: 0.5rem;
+    }
+}
+@media (max-width:600px){
+.Link{
+    font-size: 1.2rem;
+}
+}
